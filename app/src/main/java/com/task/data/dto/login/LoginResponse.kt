@@ -1,7 +1,7 @@
 package com.task.data.dto.login
 
 /**
- * Created by AhmedEltaher
+ * Created by Eldho
  */
 data class LoginResponse(val id: String, val firstName: String, val lastName: String,
                          val streetName: String, val buildingNumber: String,

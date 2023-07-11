@@ -15,7 +15,7 @@ import javax.inject.Inject
 
 
 /**
- * Created by AhmedEltaher
+ * Created by Eldho
  */
 
 class TestDataRepository @Inject constructor() : DataRepositorySource {
@@ -36,9 +36,9 @@ class TestDataRepository @Inject constructor() : DataRepositorySource {
 
     override suspend fun doLogin(loginRequest: LoginRequest): Flow<Resource<LoginResponse>> {
         return flow {
-            emit(Resource.Success(LoginResponse("123", "Ahmed", "Mahmoud",
+            emit(Resource.Success(LoginResponse("123", "Eldho", "Paul",
                     "FrunkfurterAlle", "77", "12000", "Berlin",
-                    "Germany", "ahmed@ahmed.ahmed")))
+                    "Germany", "Eldho@Eldho.Eldho")))
         }
     }
 

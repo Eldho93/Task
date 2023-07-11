@@ -15,7 +15,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 /**
- * Created by AhmedEltaher
+ * Created by Eldho
  */
 
 private const val timeoutRead = 30   //In seconds

@@ -23,7 +23,7 @@ import java.lang.Thread.sleep
 
 
 /**
- * Created by AhmedEltaher
+ * Created by Eldho
  */
 @HiltAndroidTest
 class LoginActivityTest {
@@ -46,8 +46,8 @@ class LoginActivityTest {
         onView(withId(R.id.login)).check(matches(isDisplayed()))
         onView(withId(R.id.username)).perform(clearText())
         onView(withId(R.id.password)).perform(clearText())
-        onView(withId(R.id.username)).perform(typeText("ahmed@ahmed.ahmed"))
-        onView(withId(R.id.password)).perform(typeText("ahmed"))
+        onView(withId(R.id.username)).perform(typeText("Eldho@Eldho.Eldho"))
+        onView(withId(R.id.password)).perform(typeText("Eldho"))
         onView(withId(R.id.login)).perform(click())
         Intents.intended(hasComponent(hasClassName("com.task.ui.component.recipes.RecipesListActivity")))
     }
@@ -62,7 +62,7 @@ class LoginActivityTest {
         onView(withId(R.id.username)).perform(clearText())
         onView(withId(R.id.password)).perform(clearText())
         onView(withId(R.id.username)).perform(typeText(""))
-        onView(withId(R.id.password)).perform(typeText("ahmed"))
+        onView(withId(R.id.password)).perform(typeText("Eldho"))
         sleep(Toast.LENGTH_LONG.toLong())
         onView(withId(R.id.login)).perform(click())
 
@@ -78,7 +78,7 @@ class LoginActivityTest {
         onView(withId(R.id.login)).check(matches(isDisplayed()))
         onView(withId(R.id.username)).perform(clearText())
         onView(withId(R.id.password)).perform(clearText())
-        onView(withId(R.id.username)).perform(typeText("ahmed@ahmed.ahmed"))
+        onView(withId(R.id.username)).perform(typeText("Eldho@Eldho.Eldho"))
         onView(withId(R.id.password)).perform(typeText(""))
         onView(withId(R.id.login)).perform(click())
 

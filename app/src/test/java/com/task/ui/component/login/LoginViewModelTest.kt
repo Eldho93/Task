@@ -21,7 +21,7 @@ import org.junit.Test
 import org.junit.jupiter.api.extension.ExtendWith
 
 /**
- * Created by AhmedEltaher
+ * Created by Eldho
  */
 @ExperimentalCoroutinesApi
 @ExtendWith(InstantExecutorExtension::class)
@@ -48,11 +48,11 @@ class LoginViewModelTest {
     @Test
     fun `login Success`() {
         // Let's do an answer for the liveData
-        val userName = "ahmed@ahmed.ahmed"
-        val password = "ahmed"
-        val loginResponse = LoginResponse("123", "Ahmed", "Mahmoud",
+        val userName = "Eldho@Eldho.Eldho"
+        val password = "Eldho"
+        val loginResponse = LoginResponse("123", "Eldho", "Paul",
                 "FrunkfurterAlle", "77", "12000", "Berlin",
-                "Germany", "ahmed@ahmed.ahmed")
+                "Germany", "Eldho@Eldho.Eldho")
 
         //1- Mock calls
         coEvery { dataRepository.doLogin(LoginRequest(userName, password)) } returns flow {
@@ -73,7 +73,7 @@ class LoginViewModelTest {
     @Test
     fun `login with Wrong Password`() {
         // Let's do an answer for the liveData
-        val userName = "ahmed@ahmed.ahmed"
+        val userName = "Eldho@Eldho.Eldho"
         val password = " "
 
         //1- Mock calls
@@ -97,7 +97,7 @@ class LoginViewModelTest {
     fun `login With Wrong User Name`() {
         // Let's do an answer for the liveData
         val userName = " "
-        val password = "ahmed"
+        val password = "Eldho"
 
         //1- Mock calls
         coEvery { dataRepository.doLogin(LoginRequest(userName, password)) } returns flow {

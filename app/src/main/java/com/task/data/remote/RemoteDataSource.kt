@@ -4,7 +4,7 @@ import com.task.data.Resource
 import com.task.data.dto.recipes.Recipes
 
 /**
- * Created by AhmedEltaher
+ * Created by Eldho
  */
 
 internal interface RemoteDataSource {
